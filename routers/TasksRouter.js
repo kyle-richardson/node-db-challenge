@@ -29,9 +29,11 @@ router.post('/', (req, res) => {
     const newTask = req.body
     db.addTask(newTask)
         .then(promise => {
+            console.log(promise)
             res.status(200).json(promise);
         })
         .catch(err => {
+            console.log(err)
             res.status(500).json({ message: 'Failed to add task' , error: err});
         });
 });
