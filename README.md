@@ -40,11 +40,23 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+relational database is the oldest and most common type of digital database in use today, which is the overarching structure of tables with rows and columns.
+
+SQL, or Structured Query Language, is simply one language designed to communicate with relational databases.  it is also the most common.
+
 - [ ] Why do tables need a `primary key`?
+
+So that functions and queries can reference the data reliably, where there is a unique property to each entry in a table
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+foreign key
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+intermediary tables, or bridge tables, to help identify the relationship/links between 2 other table entries
+
+
 
 ## Minimum Viable Product
 

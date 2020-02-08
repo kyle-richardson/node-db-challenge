@@ -30,4 +30,15 @@ router.get('/:id', async (req, res) => {
     }
 })
 
+router.post('/', (req, res) => {
+    const newProject = req.body
+    db.addProject(newProject)
+        .then(promise => {
+            res.status(200).json(promise);
+        })
+        .catch(err => {
+            res.status(500).json({ message: 'Failed to add project' , error: err});
+        });
+});
+
 module.exports = router;
